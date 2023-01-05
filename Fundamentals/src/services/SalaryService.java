@@ -16,7 +16,6 @@ public class SalaryService {
 		return employee.getGrossSalary()
 				- taxService.tax(employee.getGrossSalary())
 				- pensionService.discount(employee.getGrossSalary());
-		
 	}
 
 }
