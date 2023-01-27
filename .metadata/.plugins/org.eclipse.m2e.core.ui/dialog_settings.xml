@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="D:\Marcia\Cursos\DevSuperior\SpringFundamentals\ecommerce"/>
+			<item value="D:\Marcia\Cursos\DevSuperior\BootcampSpring\ProjectDSCommerce"/>
+			<item value="D:\Marcia\Cursos\DevSuperior\BootcampSpring\project-ds-commerce"/>
+			<item value="D:\Marcia\Cursos\DevSuperior\BootcampSpring"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>
