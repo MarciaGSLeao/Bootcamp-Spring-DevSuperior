@@ -5,6 +5,7 @@ import java.util.Scanner;
 import entities.Employee;
 import services.PensionService;
 import services.PensionServiceBrazil;
+import services.SalaryService;
 import services.TaxService;
 import services.TaxServiceBrazil;
 
@@ -22,15 +23,11 @@ public class Application {
 		Employee employee = new Employee(name, grossSalary);
 		TaxService taxService = new TaxServiceBrazil();
 		PensionService pensionService = new PensionServiceBrazil();
+		SalaryService salaryService= new SalaryService(taxService, pensionService);
 		
-		/* FORMA NÃO RECOMENDADA!
-		Double netSalary = grossSalary * 0.7;
+		Double netSalary = salaryService.netSalary(employee);
 		System.out.printf("Salário Líquido = R$ %.2f", netSalary);
-		 */
 
-		Double netSalary = employee.getGrossSalary() - taxService.getTax(employee.getGrossSalary()) - pensionService.getDiscount(employee.getGrossSalary());
-		System.out.printf("Salário Líquido = R$ %.2f", netSalary);
-		
 		sc.close();
 	}
 }
