@@ -1,0 +1,8 @@
+PDFs DO CURSO DE FUNDAMENTOS DE SPRING:
+    https://drive.google.com/drive/folders/1DysxRuxNEfag7xvPhX03XnfoQ7SSXJcx?usp=sharing
+
+ASSUNTOS DO CURSO DE FUNDAMENTOS DE SPRING:
+    - Injeção de Dependências
+    - DTO
+    - Camadas
+    - ORM e JPA
