@@ -1,11 +1,13 @@
 package com.gameleiramag.dscatalog.services;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.gameleiramag.dscatalog.dto.CategoryDTO;
 import com.gameleiramag.dscatalog.entities.Category;
 import com.gameleiramag.dscatalog.repositories.CategoryRepository;
 
@@ -16,7 +18,10 @@ public class CategoryService {
 	private CategoryRepository repository;
 
 	@Transactional(readOnly = true)
-	public List<Category> findAll(){
-		return repository.findAll();
+	public List<CategoryDTO> findAll(){
+		List<Category> list = repository.findAll();
+		return list.stream()
+				.map(e -> new CategoryDTO(e))
+				.collect(Collectors.toList());
 	}
 }
