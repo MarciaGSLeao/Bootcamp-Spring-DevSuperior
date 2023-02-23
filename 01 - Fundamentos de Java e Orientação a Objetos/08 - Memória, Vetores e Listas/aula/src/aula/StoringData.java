@@ -1,8 +1,8 @@
-package vetor;
+package aula;
 
 import java.util.Scanner;
 
-public class ArmazenandoDados {
+public class StoringData {
 	
 //	FAZER UM PROGRAMA QUE LEIA AS ALTURAS DE UM NÚMERO DE PESSOAS E DEVOLVA A MÉDIA.
 	public static void main(String[] args) {
