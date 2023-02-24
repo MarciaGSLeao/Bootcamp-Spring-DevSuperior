@@ -13,15 +13,22 @@ public class NegativesNumbersProgram {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.println("Informe quantos números deseja armazenar? ");
+		Integer quantity = sc.nextInt();
 		
-
+		Integer[] numbers = new Integer[quantity];
+		System.out.println("Informe os números: ");
 		
+		for (int i=0; i<numbers.length; i++) {
+			numbers[i] = sc.nextInt();
+		}
 		
-		
-		
-		
-		
-		
+		for(int i=0; i<numbers.length; i++) {
+			if(numbers[i] < 0) {
+				System.out.printf("%d%n", numbers[i]);
+			}
+		}
+	
 		sc.close();
 		
 	}
